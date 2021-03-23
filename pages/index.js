@@ -10,8 +10,37 @@ export default function Home() {
     <Div100vh className='relative'>
       <div id='wrapper' className='flex flex-col min-h-full lg:min-h-0 w-full'>
         <Head>
-          <title>Zeitraum</title>
+          <title>Zeitraum - Reine Kopfsache</title>
           <link rel='icon' href='/favicon.ico' />
+          {/* Twitter */}
+          <meta
+            name='twitter:card'
+            content='Dein Kopf ist unsere Hauptsache.'
+            key='twcard'
+          />
+
+          {/* Open Graph */}
+          <meta property='og:url' content='https://zeitraum.ch' key='ogurl' />
+          <meta
+            property='og:image'
+            content='/assets/ZEITRAUM_Quer_02_WEB.jpg'
+            key='ogimage'
+          />
+          <meta
+            property='og:site_name'
+            content='Zeitraum - Reine Kopfsache'
+            key='ogsitename'
+          />
+          <meta
+            property='og:title'
+            content='Zeitraum - Reine Kopfsache'
+            key='ogtitle'
+          />
+          <meta
+            property='og:description'
+            content='Dein Kopf ist unsere Hauptsache.'
+            key='ogdesc'
+          />
         </Head>
         <header>
           <h1 className='m-auto w-1/2 mt-12 mb-6 md:w-48'>
