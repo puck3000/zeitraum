@@ -42,7 +42,7 @@ export default function Home() {
             onClick={() => setToggle(!toggle)}
           >
             <h2 className='text-2xl xl:text-3xl my-6'>Über uns</h2>
-            <p className='font-normal lg:w-2/3 lg:mx-auto mb-6 xl:text-2xl '>
+            <p className='font-normal md:w-2/3 mx-auto mb-6 xl:text-2xl '>
               In unserem Raum geniesst du deine Zeit, in besten Händen an bester
               Lage und mit viel Gemütlichkeit. Für ein paar Augenblicke vergisst
               du den Rest, die verlorene Zeit lohnt sich um's Mehrfache, denn
@@ -54,7 +54,7 @@ export default function Home() {
               href='/assets/ZEITRAUM_Angebot_0–99.pdf'
               target='_blank'
               rel='noopener'
-              className={`xl:text-2xl ${toggle ? '' : 'hidden'}`}
+              className={`xl:text-2xl ${toggle ? '' : 'lg:hidden'}`}
             >
               Angebot
             </a>
