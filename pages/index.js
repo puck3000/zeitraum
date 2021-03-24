@@ -65,31 +65,34 @@ export default function Home() {
             }`}
           />
           <article
-            className={`lg:absolute lg:inset-0 lg:border-white lg:border-4 lg:cursor-pointer transition-opacity duration-200 ${
+            className={`mx-2 pt-6 lg:absolute lg:inset-0 lg:cursor-pointer transition-opacity duration-200 ${
               toggle ? 'lg:opacity-100' : 'lg:opacity-0'
             }`}
             onClick={() => setToggle(!toggle)}
           >
-            <h2 className='text-2xl xl:text-3xl my-6'>Über uns</h2>
-            <p className='font-normal md:w-2/3 mx-auto mb-6 xl:text-2xl '>
-              In unserem Raum geniesst du deine Zeit, in besten Händen an bester
-              Lage und mit viel Gemütlichkeit. Für ein paar Augenblicke vergisst
-              du den Rest, die verlorene Zeit lohnt sich um's Mehrfache, denn
-              Raum und Zeit sind relativ, im Grunde also Kopfsache.
-              <br />
-              Deinen Kopf machen wir zur Hauptsache, soviel steht fest.
+            <p className='font-normal md:w-2/3 mx-auto mb-2 xl:text-2xl '>
+              In unserem Raum geniesst du deine Zeit, in besten Händen, an
+              bester Lage und mit viel Wohlbefinden.
+            </p>
+            <p className='font-normal md:w-2/3 mx-auto mb-2 xl:text-2xl '>
+              Raum und Zeit sind relativ, im Grunde also reine Kopfsache.
+            </p>
+            <p className='font-normal md:w-2/3 mx-auto mb-8 xl:text-2xl '>
+              Deinen Kopf machen wir zur Hauptsache.
             </p>
             <a
               href='/assets/ZEITRAUM_Angebot_0–99.pdf'
               target='_blank'
               rel='noopener'
-              className={`xl:text-2xl ${toggle ? '' : 'lg:hidden'}`}
+              className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl ${
+                toggle ? '' : 'lg:hidden'
+              }`}
             >
               Angebot
             </a>
           </article>
         </main>
-        <footer className='mb-12 mt-6'>
+        <footer className='mb-12 mt-6 xl:text-2xl '>
           <a
             href='https://goo.gl/maps/Gt8LNHDwnG8Vts2EA'
             target='_blank'
@@ -106,6 +109,7 @@ export default function Home() {
               background-color: #fff0f0;
               margin: auto 0.2rem;
               text-align: center;
+              text-transform: uppercase;
             }
             @font-face {
               font-family: 'Oswald';
@@ -116,9 +120,16 @@ export default function Home() {
 
             html {
               font-family: 'Oswald', sans;
+              font-variation-settings: 'wght' 350;
             }
             p {
-              font-variation-settings: 'wght' 450;
+              line-height: 1.4rem;
+            }
+
+            @media screen and (min-width: 768px) {
+              body {
+                margin: auto 2rem;
+              }
             }
             @media screen and (min-width: 1024px) {
               #wrapper {
