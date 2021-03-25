@@ -42,7 +42,7 @@ export default function Home() {
             key='ogdesc'
           />
         </Head>
-        <header>
+        <header className='relative'>
           <h1 className='m-auto w-1/2 mt-12 mb-6 md:w-48'>
             <Image
               src='/assets/ZEITRAUM_Claim_Basic.svg'
@@ -52,6 +52,18 @@ export default function Home() {
               quality='100'
             />
           </h1>
+          <a
+            href='tel:0041315353535'
+            className='absolute top-6 right-6 h-10 w-10 md:hidden  '
+          >
+            <Image
+              src='/assets/icons/Phone-100px.svg'
+              alt='Zeitraum - Reine Kopfsache | Phone-Link'
+              width={100}
+              height={100}
+              quality='100'
+            />
+          </a>
         </header>
         <main className='flex-1 lg:relative lg:w-1/2 lg:m-auto'>
           <Image
@@ -102,6 +114,42 @@ export default function Home() {
           </a>
           <br />
           <a href='tel:0041315353535'>031 535 35 35</a>
+          <ul className='w-full flex mt-6 justify-center'>
+            <li className='h-9 w-9 mr-4 p-1 hover:bg-white rounded-full '>
+              <a href='http://instagram.com' target='_blank'>
+                <Image
+                  src='/assets/icons/Instagram-100px.svg'
+                  alt='Zeitraum - Reine Kopfsache | Instagram-Link'
+                  width={100}
+                  height={100}
+                  quality='100'
+                  // className='hover:bg-white rounded-full '
+                />
+              </a>
+            </li>
+            <li className='h-9 w-9 mr-4 p-1 hover:bg-white rounded-full '>
+              <a href='http://facebook.com' target='_blank'>
+                <Image
+                  src='/assets/icons/Facebook-100px.svg'
+                  alt='Zeitraum - Reine Kopfsache | Facebook-Link'
+                  width={100}
+                  height={100}
+                  quality='100'
+                />
+              </a>
+            </li>
+            <li className='h-9 w-9 p-1 hover:bg-white rounded-full '>
+              <a href='mailto:kontakt@zeitraum-rk.ch'>
+                <Image
+                  src='/assets/icons/Email-100px.svg'
+                  alt='Zeitraum - Reine Kopfsache | Email-Link'
+                  width={100}
+                  height={100}
+                  quality='100'
+                />
+              </a>
+            </li>
+          </ul>
         </footer>
         <style jsx global>
           {`
