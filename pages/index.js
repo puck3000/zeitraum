@@ -26,7 +26,7 @@ export default function Home() {
           <meta property='og:url' content='https://zeitraum.ch' key='ogurl' />
           <meta
             property='og:image'
-            content='/assets/ZEITRAUM_Quer_02_WEB.jpg'
+            content='/assets/ZEITRAUM_SoMe_KeyVisual.jpg'
             key='ogimage'
           />
           <meta
