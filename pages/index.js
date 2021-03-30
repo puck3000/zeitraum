@@ -8,7 +8,10 @@ export default function Home() {
 
   return (
     <Div100vh className='relative'>
-      <div id='wrapper' className='flex flex-col min-h-full lg:min-h-0 w-full'>
+      <div
+        id='wrapper'
+        className='relative flex flex-col min-h-full lg:min-h-0 w-full'
+      >
         <Head>
           <title>Zeitraum - Reine Kopfsache</title>
           <link rel='icon' href='/favicon.ico' />
@@ -115,7 +118,7 @@ export default function Home() {
           <br />
           <a href='tel:0041315353535'>031 535 35 35</a>
           <ul className='w-full flex mt-6 justify-center'>
-            <li className='h-9 w-9 mr-4 p-1 hover:bg-white rounded-full '>
+            {/* <li className='h-9 w-9 mr-4 p-1 hover:bg-white rounded-full '>
               <a href='http://instagram.com' target='_blank'>
                 <Image
                   src='/assets/icons/Instagram-100px.svg'
@@ -123,12 +126,11 @@ export default function Home() {
                   width={100}
                   height={100}
                   quality='100'
-                  // className='hover:bg-white rounded-full '
                 />
               </a>
-            </li>
+            </li> */}
             <li className='h-9 w-9 mr-4 p-1 hover:bg-white rounded-full '>
-              <a href='http://facebook.com' target='_blank'>
+              <a href='https://www.facebook.com/zeitraumbern' target='_blank'>
                 <Image
                   src='/assets/icons/Facebook-100px.svg'
                   alt='Zeitraum - Reine Kopfsache | Facebook-Link'
@@ -151,6 +153,32 @@ export default function Home() {
             </li>
           </ul>
         </footer>
+        <a
+          href='https://hellastudio.ch'
+          target='_blank'
+          rel='noopener noreferrer'
+          className=''
+        >
+          {/* made with ❤ by */}
+          <svg
+            className='absolute right-2 bottom-2 lg:right-5  inline w-4 h-4'
+            x='0px'
+            y='0px'
+            viewBox='0 0 150 132'
+          >
+            <g>
+              <path
+                d='M147,67.6c-3.3-1.2-6.7-1.7-10.2-1.4c-1.5,0.1-3,0.4-4.5,0.9c-1.4,0.4-2.2,1.9-1.8,3.3c0.4,1.4,1.9,2.2,3.3,1.8
+		c0.8-0.2,1.6-0.4,2.5-0.5c-1.6,30.1-28.6,54.1-61.6,54.1c-33,0-60-24-61.6-54.1c0.8,0.1,1.7,0.3,2.5,0.5c1.4,0.4,2.9-0.4,3.3-1.8
+		c0.4-1.4-0.4-2.9-1.8-3.3c-1.5-0.4-3-0.7-4.5-0.9c-3.5-0.3-6.9,0.2-10.2,1.4c-1.4,0.5-2.1,2.1-1.5,3.4c0.4,1.1,1.4,1.7,2.5,1.7
+		c0.3,0,0.6-0.1,0.9-0.2c1.1-0.4,2.3-0.7,3.4-0.9c1.6,33,31,59.4,66.9,59.4c35.9,0,65.3-26.4,66.9-59.4c1.2,0.2,2.3,0.5,3.4,0.9
+		c0.3,0.1,0.6,0.2,0.9,0.2c1.1,0,2.1-0.7,2.5-1.7C149.1,69.7,148.4,68.1,147,67.6z'
+              />
+              <ellipse cx='49.7' cy='28.4' rx='9.9' ry='27.3' />
+              <ellipse cx='99.8' cy='28.4' rx='9.9' ry='27.3' />
+            </g>
+          </svg>
+        </a>
         <style jsx global>
           {`
             body {
