@@ -137,7 +137,7 @@ export default function Home() {
               <a href='https://www.facebook.com/zeitraumbern' target='_blank'>
                 <Image
                   src='/assets/icons/Facebook-100px.svg'
-                  alt='Zeitraum - Reine Kopfsache | Facebook-Link'
+                  alt='Raumzeit - Reine Kopfsache | Facebook-Link'
                   width={100}
                   height={100}
                   quality='100'
@@ -145,10 +145,10 @@ export default function Home() {
               </a>
             </li>
             <li className='p-1 rounded-full h-9 w-9 hover:bg-white '>
-              <a href='mailto:kontakt@reinekopfsache-bern.ch'>
+              <a href='mailto:kontakt@zeitraum-rk.ch'>
                 <Image
                   src='/assets/icons/Email-100px.svg'
-                  alt='Zeitraum - Reine Kopfsache | Email-Link'
+                  alt='Raumzeit - Reine Kopfsache | Email-Link'
                   width={100}
                   height={100}
                   quality='100'
