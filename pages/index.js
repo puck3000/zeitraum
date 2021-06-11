@@ -145,7 +145,7 @@ export default function Home() {
               </a>
             </li>
             <li className='p-1 rounded-full h-9 w-9 hover:bg-white '>
-              <a href='mailto:kontakt@reinekopfsache-bern.ch'>
+              <a href='mailto:kontakt@zeitraum.ch'>
                 <Image
                   src='/assets/icons/Email-100px.svg'
                   alt='Zeitraum - Reine Kopfsache | Email-Link'
