@@ -10,7 +10,7 @@ export default function Person({ person }) {
         alt={`Portrait of ${person?.name}`}
       />
       <figcaption className=''>
-        <span className='block text-xl'>{person?.name}</span>
+        <span className='block text-xl xl:text-2xl'>{person?.name}</span>
         {person?.bio}
       </figcaption>
     </figure>
