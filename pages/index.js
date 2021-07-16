@@ -136,7 +136,7 @@ export default function Home() {
             </article>
           ) : (
             <Image
-              src='/assets/ZEITRAUM_Quer_02_WEB.jpg'
+              src='/assets/ZEITRAUM_Quer_02_WEB_Click_Desk.jpeg'
               alt='Raumzeit Team Portrait'
               width={1600}
               height={1090}
