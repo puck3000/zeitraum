@@ -1,17 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Div100vh from 'react-div-100vh'
+import Bios from './components/Bios'
+import { useMediaQuery } from '../lib/useMediaQuery'
 
 export default function Home() {
   const [toggle, setToggle] = useState(false)
+  let isMobile = useMediaQuery('(max-width: 767px)')
 
   return (
-    <Div100vh className='relative'>
-      <div
-        id='wrapper'
-        className='relative flex flex-col w-full min-h-full lg:min-h-0'
-      >
+    <Div100vh className=''>
+      <div id='wrapper' className='relative flex flex-col w-full min-h-full'>
         <Head>
           <title>Raumzeit - Reine Kopfsache</title>
           <link rel='icon' href='/favicon.ico' />
@@ -49,7 +49,7 @@ export default function Home() {
             key='ogdesc'
           />
         </Head>
-        <header className='relative'>
+        <header className=''>
           <h1 className='w-1/2 m-auto mt-12 mb-6 md:w-48'>
             <Image
               src='/assets/RAUMZEIT+Claim_Basic.svg'
@@ -72,44 +72,78 @@ export default function Home() {
             />
           </a>
         </header>
-        <main className='flex-1 lg:relative lg:w-1/2 lg:m-auto'>
-          <Image
-            src='/assets/ZEITRAUM_Quer_02_WEB.jpg'
-            alt='Raumzeit Team Portrait'
-            width={1600}
-            height={1090}
-            id='mainPortrait'
-            className={`lg:absolute lg:inset-0 transition-opacity duration-200 ${
-              toggle ? 'lg:opacity-0' : 'lg:opacity-100'
-            }`}
-          />
-          <article
-            className={`mx-2 pt-6 lg:absolute lg:inset-0 lg:cursor-pointer transition-opacity duration-200 ${
-              toggle ? 'lg:opacity-100' : 'lg:opacity-0'
-            }`}
-            onClick={() => setToggle(!toggle)}
-          >
-            <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
-              In unserem Raum geniesst du deine Zeit, in besten Händen, an
-              bester Lage und mit viel Wohlbefinden.
-            </p>
-            <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
-              Raum und Zeit sind relativ, im Grunde also reine Kopfsache.
-            </p>
-            <p className='mx-auto mb-8 font-normal md:w-2/3 xl:text-2xl '>
-              Deinen Kopf machen wir zur Hauptsache.
-            </p>
-            <a
-              href='/assets/RAUMZEITReineKopfsachePreise.pdf'
-              target='_blank'
-              rel='noopener'
-              className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl ${
-                toggle ? '' : 'lg:hidden'
-              }`}
+        <main className='flex-1 lg:w-1/2 lg:m-auto'>
+          {isMobile ? (
+            <>
+              <Image
+                src='/assets/ZEITRAUM_Quer_02_WEB.jpg'
+                alt='Raumzeit Team Portrait'
+                width={1600}
+                height={1090}
+                id='mainPortrait'
+                className={`${isMobile ? '' : 'hidden'}`}
+                onClick={() => setToggle(!toggle)}
+              />
+              <article
+                className={`pt-6 lg:cursor-pointer transition-opacity duration-200`}
+                onClick={() => setToggle(!toggle)}
+              >
+                <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
+                  In unserem Raum geniesst du deine Zeit, in besten Händen, an
+                  bester Lage und mit viel Wohlbefinden.
+                </p>
+                <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
+                  Raum und Zeit sind relativ, im Grunde also reine Kopfsache.
+                </p>
+                <p className='mx-auto mb-8 font-normal md:w-2/3 xl:text-2xl '>
+                  Deinen Kopf machen wir zur Hauptsache.
+                </p>
+                <a
+                  href='/assets/RAUMZEITReineKopfsachePreise.pdf'
+                  target='_blank'
+                  rel='noopener'
+                  className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl`}
+                >
+                  Angebot
+                </a>
+                <Bios />
+              </article>
+            </>
+          ) : toggle ? (
+            <article
+              className={`mx-2 pt-6 lg:cursor-pointer`}
+              onClick={() => setToggle(!toggle)}
             >
-              Angebot
-            </a>
-          </article>
+              <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
+                In unserem Raum geniesst du deine Zeit, in besten Händen, an
+                bester Lage und mit viel Wohlbefinden.
+              </p>
+              <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
+                Raum und Zeit sind relativ, im Grunde also reine Kopfsache.
+              </p>
+              <p className='mx-auto mb-8 font-normal md:w-2/3 xl:text-2xl '>
+                Deinen Kopf machen wir zur Hauptsache.
+              </p>
+              <a
+                href='/assets/RAUMZEITReineKopfsachePreise.pdf'
+                target='_blank'
+                rel='noopener'
+                className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl`}
+              >
+                Angebot
+              </a>
+              <Bios />
+            </article>
+          ) : (
+            <Image
+              src='/assets/ZEITRAUM_Quer_02_WEB.jpg'
+              alt='Raumzeit Team Portrait'
+              width={1600}
+              height={1090}
+              id='mainPortrait'
+              onClick={() => setToggle(!toggle)}
+            />
+          )}
         </main>
         <footer className='mt-6 mb-12 xl:text-2xl '>
           <a
@@ -161,7 +195,7 @@ export default function Home() {
           href='https://hellastudio.ch'
           target='_blank'
           rel='noopener noreferrer'
-          className=''
+          className='absolute right-0 bottom-2'
         >
           {/* made with ❤ by */}
           <svg
@@ -211,14 +245,14 @@ export default function Home() {
                 margin: auto 2rem;
               }
             }
-            @media screen and (min-width: 1024px) {
-              #wrapper {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-              }
-            }
+            // @media screen and (min-width: 1024px) {
+            //   #wrapper {
+            //     position: absolute;
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+            //   }
+            // }
           `}
         </style>
       </div>
