@@ -142,6 +142,7 @@ export default function Home() {
               height={1090}
               id='mainPortrait'
               onClick={() => setToggle(!toggle)}
+              className='cursor-pointer'
             />
           )}
         </main>
