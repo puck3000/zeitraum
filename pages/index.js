@@ -187,7 +187,10 @@ export default function Home() {
                   </a>
                 </li>
                 <li className='p-1 mr-4 rounded-full h-9 w-9 hover:bg-white '>
-                  <a href='http://instagram.com' target='_blank'>
+                  <a
+                    href='https://www.instagram.com/raumzeit_rk/'
+                    target='_blank'
+                  >
                     <Image
                       src='/assets/icons/Instagram-100px.svg'
                       alt='Zeitraum - Reine Kopfsache | Instagram-Link'
