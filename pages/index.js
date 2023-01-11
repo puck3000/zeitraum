@@ -99,7 +99,7 @@ export default function Home() {
                   Deinen Kopf machen wir zur Hauptsache.
                 </p>
                 <a
-                  href='/assets/RAUMZEITReineKopfsachePreise.pdf'
+                  href='/assets/RAUMZEIT_ReineKopfsachePreise2023.pdf'
                   target='_blank'
                   rel='noopener'
                   className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl`}
@@ -125,7 +125,7 @@ export default function Home() {
                 Deinen Kopf machen wir zur Hauptsache.
               </p>
               <a
-                href='/assets/RAUMZEITReineKopfsachePreise.pdf'
+                href='/assets/RAUMZEIT_ReineKopfsachePreise2023.pdf'
                 target='_blank'
                 rel='noopener'
                 className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl`}
