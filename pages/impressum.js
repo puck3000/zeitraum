@@ -51,101 +51,51 @@ export default function Home() {
           />
         </Head>
         <header className=''>
-          <h1 className='w-1/2 m-auto mt-12 mb-6 md:w-48'>
-            <Image
-              src='/assets/RAUMZEIT+Claim_Basic.svg'
-              alt='Raumzeit - Reine Kopfsache | Logo'
-              width={966}
-              height={301}
-              quality='100'
-            />
+          <h1 className='text-2xl w-1/2 m-auto mt-12 mb-6 md:w-48'>
+            Impressum
           </h1>
-          <a
-            href='tel:0041315353535'
-            className='absolute w-10 h-10 top-6 right-6 md:hidden '
-          >
-            <Image
-              src='/assets/icons/Phone-100px.svg'
-              alt='Raumzeit - Reine Kopfsache | Phone-Link'
-              width={100}
-              height={100}
-              quality='100'
-            />
-          </a>
         </header>
         <main className='flex-1 lg:w-1/2 lg:m-auto'>
-          {isMobile ? (
-            <>
-              <Image
-                src='/assets/ZEITRAUM_Quer_02_WEB_Klimaneutral_optim.jpg'
-                alt='Raumzeit Team Portrait'
-                width={1600}
-                height={1090}
-                id='mainPortrait'
-                className={`${isMobile ? '' : 'hidden'}`}
-                onClick={() => setToggle(!toggle)}
-              />
-              <article
-                className={`pt-6 lg:cursor-pointer transition-opacity duration-200`}
-                onClick={() => setToggle(!toggle)}
-              >
-                <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
-                  In unserem Raum geniesst du deine Zeit, in besten Händen, an
-                  bester Lage und mit viel Wohlbefinden.
-                </p>
-                <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
-                  Raum und Zeit sind relativ, im Grunde also reine Kopfsache.
-                </p>
-                <p className='mx-auto mb-8 font-normal md:w-2/3 xl:text-2xl '>
-                  Deinen Kopf machen wir zur Hauptsache.
-                </p>
-                <a
-                  href='/assets/RAUMZEIT_ReineKopfsachePreise2023.pdf'
-                  target='_blank'
-                  rel='noopener'
-                  className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl`}
-                >
-                  Angebot
-                </a>
-                <Bios />
-              </article>
-            </>
-          ) : toggle ? (
-            <article
-              className={`mx-2 pt-6 lg:cursor-pointer`}
-              onClick={() => setToggle(!toggle)}
-            >
-              <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
-                In unserem Raum geniesst du deine Zeit, in besten Händen, an
-                bester Lage und mit viel Wohlbefinden.
-              </p>
-              <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
-                Raum und Zeit sind relativ, im Grunde also reine Kopfsache.
-              </p>
-              <p className='mx-auto mb-8 font-normal md:w-2/3 xl:text-2xl '>
-                Deinen Kopf machen wir zur Hauptsache.
-              </p>
-              <a
-                href='/assets/RAUMZEIT_ReineKopfsachePreise2023.pdf'
-                target='_blank'
-                rel='noopener'
-                className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl`}
-              >
-                Angebot
-              </a>
-              <Bios />
-            </article>
-          ) : (
-            <Image
-              src='/assets/ZEITRAUM_Quer_02_WEB_Klimaneutral_optim.jpg'
-              alt='Raumzeit Team Portrait'
-              width={1600}
-              height={1090}
-              id='mainPortrait'
-              onClick={() => setToggle(!toggle)}
-              className='cursor-pointer'
-            />
-          )}
+          <article className='mb-6'>
+            <h3 className='text-xl normal-case text-left mb-2'>
+              Allgemeines zum Datenschutz
+            </h3>
+            <p className='text-left normal-case'>
+              lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quae voluptate, quod, quidem, voluptatum voluptas quibusdam
+              voluptatem voluptates quos quia nesciunt. Quisquam, quae.
+              Quisquam, quae. lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quisquam quae voluptate, quod, quidem, voluptatum voluptas
+              quibusdam voluptatem voluptates quos quia nesciunt. Quisquam,
+              quae. Quisquam, quae.
+            </p>
+          </article>
+
+          <article className='mb-6'>
+            <h3 className='text-xl normal-case text-left mb-2'>Cookies</h3>
+            <p className='text-left normal-case'>
+              Unsere Website verwendet keine Cookies. Wir verwenden keine
+              Technologien, um Informationen über Sie zu sammeln, während Sie
+              unsere Website besuchen. Wir respektieren Ihre Privatsphäre und
+              bemühen uns um Transparenz in Bezug auf die Daten, die wir
+              möglicherweise von Ihnen sammeln.
+            </p>
+          </article>
+          <article className='mb-16'>
+            <h3 className='text-xl normal-case text-left mb-2'>BlaBla</h3>
+            <p className='text-left normal-case'>
+              lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quae voluptate, quod, quidem, voluptatum voluptas quibusdam
+              voluptatem voluptates quos quia nesciunt. Quisquam, quae.
+              Quisquam, quae. lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quisquam quae voluptate, quod, quidem, voluptatum voluptas
+              quibusdam voluptatem voluptates quos quia nesciunt. Quisquam,
+              quae. Quisquam, quae.
+            </p>
+          </article>
+          <Link className='xl:text-2xl' href='/'>
+            zurück
+          </Link>
         </main>
         <footer className='mt-6 mb-12 xl:text-2xl '>
           <a
@@ -156,13 +106,10 @@ export default function Home() {
             MOSERSTRASSE 18, 3014 BERN
           </a>
           <br />
-          <a className='block mb-4' href='tel:0041315353535'>
+          <a className='block mb-8' href='tel:0041315353535'>
             031 535 35 35
           </a>
-          <Link className='block  mb-8' href='/impressum'>
-            impressum
-          </Link>
-          <ul className='flex flex-wrap justify-center md:justify-between w-full lg:w-1/2 lg:m-auto '>
+          <ul className='flex flex-wrap md:justify-between w-full lg:w-1/2 lg:m-auto '>
             <li className='w-full md:w-1/2'>
               <ul className='flex justify-center md:justify-start mb-4 md:mb-0'>
                 <li className='p-1 mr-4 rounded-full h-9 w-9 hover:bg-white '>
