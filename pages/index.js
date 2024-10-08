@@ -23,11 +23,7 @@ export default function Home() {
           />
 
           {/* Open Graph */}
-          <meta
-            property='og:url'
-            content='https://reinekopfache-bern.ch'
-            key='ogurl'
-          />
+          <meta property='og:url' content='https://reinekopfache-bern.ch' key='ogurl' />
           <meta
             property='og:image'
             content='/assets/ZEITRAUM_SoMe_KeyVisual.jpg'
@@ -38,11 +34,7 @@ export default function Home() {
             content='Raumzeit - Reine Kopfsache'
             key='ogsitename'
           />
-          <meta
-            property='og:title'
-            content='Raumzeit - Reine Kopfsache'
-            key='ogtitle'
-          />
+          <meta property='og:title' content='Raumzeit - Reine Kopfsache' key='ogtitle' />
           <meta
             property='og:description'
             content='Dein Kopf ist unsere Hauptsache.'
@@ -89,8 +81,8 @@ export default function Home() {
                 onClick={() => setToggle(!toggle)}
               >
                 <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
-                  In unserem Raum geniesst du deine Zeit, in besten Händen, an
-                  bester Lage und mit viel Wohlbefinden.
+                  In unserem Raum geniesst du deine Zeit, in besten Händen, an bester Lage
+                  und mit viel Wohlbefinden.
                 </p>
                 <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
                   Raum und Zeit sind relativ, im Grunde also reine Kopfsache.
@@ -99,7 +91,7 @@ export default function Home() {
                   Deinen Kopf machen wir zur Hauptsache.
                 </p>
                 <a
-                  href='/assets/RAUMZEIT_Preisliste_2024_A4.pdf'
+                  href='/assets/RAUMZEIT_Preisliste_10.2024_A4.pdf'
                   target='_blank'
                   rel='noopener'
                   className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl`}
@@ -115,8 +107,8 @@ export default function Home() {
               onClick={() => setToggle(!toggle)}
             >
               <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
-                In unserem Raum geniesst du deine Zeit, in besten Händen, an
-                bester Lage und mit viel Wohlbefinden.
+                In unserem Raum geniesst du deine Zeit, in besten Händen, an bester Lage
+                und mit viel Wohlbefinden.
               </p>
               <p className='mx-auto mb-2 font-normal md:w-2/3 xl:text-2xl '>
                 Raum und Zeit sind relativ, im Grunde also reine Kopfsache.
@@ -125,7 +117,7 @@ export default function Home() {
                 Deinen Kopf machen wir zur Hauptsache.
               </p>
               <a
-                href='/assets/RAUMZEIT_Preisliste_2024_A4.pdf'
+                href='/assets/RAUMZEIT_Preisliste_10.2024_A4.pdf'
                 target='_blank'
                 rel='noopener'
                 className={`tracking-widest text-lg bg-white px-6 py-1 xl:text-2xl`}
@@ -147,11 +139,7 @@ export default function Home() {
           )}
         </main>
         <footer className='mt-6 mb-12 xl:text-2xl '>
-          <a
-            href='https://goo.gl/maps/Gt8LNHDwnG8Vts2EA'
-            target='_blank'
-            rel='noopener'
-          >
+          <a href='https://goo.gl/maps/Gt8LNHDwnG8Vts2EA' target='_blank' rel='noopener'>
             MOSERSTRASSE 18, 3014 BERN
           </a>
           <br />
@@ -162,10 +150,7 @@ export default function Home() {
             <li className='w-full md:w-1/2'>
               <ul className='flex justify-center mb-4 md:justify-start md:mb-0'>
                 <li className='p-1 mr-4 rounded-full h-9 w-9 hover:bg-white '>
-                  <a
-                    href='https://www.facebook.com/zeitraumbern'
-                    target='_blank'
-                  >
+                  <a href='https://www.facebook.com/zeitraumbern' target='_blank'>
                     <Image
                       src='/assets/icons/Facebook-100px.svg'
                       alt='Raumzeit - Reine Kopfsache | Facebook-Link'
@@ -187,10 +172,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className='p-1 mr-4 rounded-full h-9 w-9 hover:bg-white '>
-                  <a
-                    href='https://www.instagram.com/raumzeit_rk/'
-                    target='_blank'
-                  >
+                  <a href='https://www.instagram.com/raumzeit_rk/' target='_blank'>
                     <Image
                       src='/assets/icons/Instagram-100px.svg'
                       alt='Zeitraum - Reine Kopfsache | Instagram-Link'
