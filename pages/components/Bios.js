@@ -4,17 +4,17 @@ export default function Bios() {
   const persons = [
     {
       name: 'Sophie',
-      img: '/assets/SOPHIE.jpeg',
+      img: '/assets/SOPHIE.jpg',
       bio: 'kreativ vielfältig sorgfältig direkt spontan locker herzlich zielstrebig',
     },
     {
       name: 'Daniela',
-      img: '/assets/DANI.jpeg',
+      img: '/assets/DANI.jpg',
       bio: 'fröhlich harmonisch präzise feinfühlig talentiert leidenschaftlich',
     },
     {
       name: 'Katja',
-      img: '/assets/KATJA.jpeg',
+      img: '/assets/KATJA.jpg',
       bio: 'offen feinfühlig leidenschaftlich neugierig sattelfest experimentierfreudig',
     },
   ]

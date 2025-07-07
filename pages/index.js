@@ -68,7 +68,7 @@ export default function Home() {
           {isMobile ? (
             <>
               <Image
-                src='/assets/ZEITRAUM_Quer_02_WEB_Klimaneutral_optim.jpg'
+                src='/assets/GRUPPE.jpg'
                 alt='Raumzeit Team Portrait'
                 width={1600}
                 height={1090}
@@ -128,7 +128,7 @@ export default function Home() {
             </article>
           ) : (
             <Image
-              src='/assets/ZEITRAUM_Quer_02_WEB_Klimaneutral_optim.jpg'
+              src='/assets/GRUPPE.jpg'
               alt='Raumzeit Team Portrait'
               width={1600}
               height={1090}
